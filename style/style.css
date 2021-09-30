@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    display: grid;
+    grid-template-areas: "sedan suv luxury";
+    width: 64%;
+    height: 460px;
+    margin-left: 19%;
+    margin-top: 130px;
+    align-items: stretch;
+    border-radius: 8px 8px;
+}
+
+#sedan-div{
+    grid-area: sedan;
+    background-color: hsl(31, 77%, 52%);
+    width: 290px;
+    margin-right: -1px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#suv-div{
+    grid-area: suv;
+    background-color: hsl(184, 100%, 22%);
+    width: 290px;
+    margin-right: -1px;
+}
+
+#luxury-div{
+    grid-area: luxury;
+    background-color: hsl(179, 100%, 13%);
+    width: 290px;
+    margin-right: 65px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.img-car{
+    margin-top:15%;
+    margin-left: 13%;
+    width: 19%;
+}
+
+h2{
+    margin-top: 9%;
+    margin-left: 12%;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    margin-top: 9%;
+    margin-left: 12%;
+    margin-right: 15%;
+    text-align: start;
+    font-size: 15px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+    margin-top: 28%;
+    margin-left: 14%;
+    width: 45%;
+    height: 9%;
+    border-radius: 20px;
+    border: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+#sedan-button{
+    color: hsl(31, 77%, 52%);
+}
+
+#suv-button{
+    color: hsl(184, 100%, 22%);
+}
+
+#luxu-button{
+    color: hsl(179, 100%, 13%);
+}
+
+
+#sedan-button:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+
+#suv-button:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+
+#luxu-button:hover{
+    background-color: hsl(179, 100%, 13%);;
+    border: 2px solid hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+
+@media (min-width:375px) and (max-width:425px){
+    main{
+        grid-template-areas:"sedan"
+                            "suv"
+                            "luxury";
+        width:75%;
+        margin-right: 5px;
+    }
+    #sedan-div{
+        grid-area: sedan;
+        background-color: hsl(31, 77%, 52%);
+        width: 290px;
+        height: 405px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    #suv-div{
+        grid-area: suv;
+        margin-top: 0%;
+        background-color: hsl(184, 100%, 22%);
+        width: 290px;
+        height: 405px;
+    }
+    #luxury-div{
+        grid-area: luxury;
+        background-color: hsl(179, 100%, 13%);
+        margin-top: 0%;
+        width: 290px;
+        margin-right: 65px;
+        height: 405px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    button{
+        margin-top: 9%;
+        margin-left: 14%;
+        width: 45%;
+        height: 9%;
+        border-radius: 20px;
+        border: hsl(0, 0%, 95%);
+        background-color: hsl(0, 0%, 95%);
+        color:hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: bold;
+    }
+    p{
+        margin-top: 9%;
+        margin-left: 12%;
+        margin-right: 15%;
+        text-align: start;
+        font-size: 14px;
+        line-height: 25px;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .attribution{
+        position: relative;
+        top: 730px;
+    }
+}
+
+.attribution{
+    margin-top: 35px;
+    text-align: center;
+}
